@@ -105,7 +105,7 @@ export default class LiftingStateUpCart extends Component {
         let mangGioHang = [...this.state.mangGioHang];
         index ?
             (mangGioHang.map((item) => {
-                if (item.maSp === product.maSp) {
+                if (item.maSp === product.maSp && item.soLuong > 1) {
                     item.soLuong--;
                 }
             }))
